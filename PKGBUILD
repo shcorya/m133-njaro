@@ -8,12 +8,12 @@
 # Cloud Server
 _server=cpx51
 
-pkgbase=linux510
+pkgbase=linux510-m133-njaro
 pkgname=('linux510' 'linux510-headers')
-_kernelname=-m133-njaro
+_kernelname=-MANJARO-m133-n
 _basekernel=5.10
 _basever=510
-pkgver=5.10.62
+pkgver=5.10.66
 pkgrel=1
 arch=('x86_64')
 url="https://www.kernel.org/"
