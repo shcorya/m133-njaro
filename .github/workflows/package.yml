@@ -28,7 +28,7 @@ jobs:
         name: Create final package location
       - run: chown builder:builder -R /home/builder
         name: Chown builder home dir
-      - run: su builder -c "cd /home/builder/"$(echo -e "$GITHUB_REPOSITORY" | sed 's/.*\///g')"; makepkg -s"
+      - run: su builder -c "cd /home/builder/"$(echo -e "$GITHUB_REPOSITORY" | sed 's/.*\///g')"; updpkgsums; makepkg -s"
         name: Compile the Kernel
       - uses: actions/upload-artifact@v2
         name: Generate Artifacts
