@@ -31,9 +31,7 @@ makedepends=('bc'
     'tar'
     'xz')
 options=('!strip')
-source=("https://www.kernel.org/pub/linux/kernel/v5.x/sha256sums.asc"
-	"https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.sign"
-	"https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.xz"
+source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v5.x/patch-${pkgver}.xz"
         # the main kernel config files
         'config' 'config.anbox'
