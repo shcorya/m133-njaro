@@ -10,7 +10,7 @@ _server=cpx51
 
 pkgbase=linux510
 pkgname=('linux510' 'linux510-headers')
-_kernelname=-MANJARO
+_kernelname=-m133-njaro
 _basekernel=5.10
 _basever=510
 pkgver=5.10.62
