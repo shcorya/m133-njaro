@@ -9,7 +9,7 @@
 _server=cpx51
 
 pkgbase=linux510-m133-njaro
-pkgname=('linux510' 'linux510-headers')
+pkgname=('linux510-m133-njaro' 'linux510-m133-njaro-headers')
 _kernelname=-MANJARO-m133-n
 _basekernel=5.10
 _basever=510
@@ -31,9 +31,9 @@ makedepends=('bc'
     'tar'
     'xz')
 options=('!strip')
-source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.sign"
+source=("https://www.kernel.org/pub/linux/kernel/v5.x/sha256sums.asc"
+	"https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.sign"
 	"https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_basekernel}.tar.xz"
-	"https://www.kernel.org/pub/linux/kernel/v5.x/sha256sums.asc"
         "https://www.kernel.org/pub/linux/kernel/v5.x/patch-${pkgver}.xz"
         # the main kernel config files
         'config' 'config.anbox'
