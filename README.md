@@ -6,7 +6,9 @@ I recommend that you enable the "Use number pad to move cursor" option menu with
 ## Installation
 Download the two packages under the releases section of this GitHub repository. Install the packages with pacman.
 
-`sudo pacman -U Downloads/linux510-5.10.66-1-x86_64.pkg`
+```bash
+sudo pacman -U Downloads/linux510-5.10.66-1-x86_64.pkg
+```
 
 `sudo pacman -U Downloads/linux510-headers-5.10.66-1-x86_64.pkg`
 
